@@ -1,1 +1,1 @@
-Projet SFML Small World
+Projet SFML
