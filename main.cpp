@@ -5,8 +5,9 @@ using namespace sf;
 
     vector<Race> races;
     vector<PouvoirSpecial> pouvoirs;
+    vector<Race> racesMelangees;
+    vector<PouvoirSpecial> pouvoirsMelanges;
     vector<Peuple> peuples;
-
 
 void iniatiliserJeu()
 {
@@ -28,23 +29,38 @@ void iniatiliserJeu()
     pouvoirs.push_back(Volants());
 
 
-    //6 Peuples (combinaisons Race + PouvoirSpecial) choisis au hasard
     srand(time(NULL)); // initialisation de rand
     int nbRacesDisponibles = races.size();
     int nbPouvoirsDisponibles = pouvoirs.size();
     int nombreAleatoireRaces;
     int nombreAleatoirePouvoirs;
+    int nombrePeuplesDisponibles = 6;
 
-    for(int i=0; i<6; i++)
+    //Melange des races
+    for(int i=0; i<nbRacesDisponibles; i++)
     {
-        nombreAleatoireRaces = rand()%nbRacesDisponibles;
-        nombreAleatoirePouvoirs = rand()%nbPouvoirsDisponibles;
-        peuples.push_back(Peuple(races.at(nombreAleatoireRaces), pouvoirs.at(nombreAleatoirePouvoirs)));
+        nombreAleatoireRaces = rand()%races.size();
+        racesMelangees.push_back(races.at(nombreAleatoireRaces));
         races.erase(races.begin() + nombreAleatoireRaces);
-        pouvoirs.erase(pouvoirs.begin() + nombreAleatoirePouvoirs);
-        nbRacesDisponibles--;
-        nbPouvoirsDisponibles--;
+        cout << "races : " << races.size() << endl;
     }
+
+    //Melange des pouvoirs
+     for(int i=0; i<nbPouvoirsDisponibles; i++)
+    {
+        nombreAleatoirePouvoirs = rand()%pouvoirs.size();
+        pouvoirsMelanges.push_back(pouvoirs.at(nombreAleatoirePouvoirs));
+        pouvoirs.erase(pouvoirs.begin() + nombreAleatoirePouvoirs);
+    }
+
+    //Peuples (combinaisons Race + PouvoirSpecial) choisis au hasard que peuvent prendre les joueurs
+    for(int i=0; i<nombrePeuplesDisponibles; i++)
+    {
+        peuples.push_back(Peuple(racesMelangees.at(0), pouvoirsMelanges.at(0)));
+        racesMelangees.erase(racesMelangees.begin());
+        pouvoirsMelanges.erase(pouvoirsMelanges.begin());
+    }
+
 
     for(unsigned int i=0; i<peuples.size(); i++)
     {

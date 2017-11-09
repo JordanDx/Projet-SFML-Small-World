@@ -1,8 +1,8 @@
 #ifndef PEUPLE_H
 #define PEUPLE_H
 
-#include "Race.h"
-#include "PouvoirSpecial.h"
+#include "Races/Race.h"
+#include "Pouvoirs/PouvoirSpecial.h"
 
 class Peuple
 {

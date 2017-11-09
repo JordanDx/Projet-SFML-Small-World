@@ -611,3 +611,211 @@
 1509521288 source:d:\projet sfml\src\volants.cpp
 	"Volants.h"
 
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\amazone.cpp
+	"Amazone.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\amazone.h
+	"Race.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\race.h
+	<string>
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\armes.cpp
+	"Armes.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\armes.h
+	"PouvoirSpecial.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\pouvoirspecial.h
+	<string>
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\desforets.cpp
+	"DesForets.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\desforets.h
+	"PouvoirSpecial.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\elfe.cpp
+	"Elfe.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\elfe.h
+	"Race.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\fortunes.cpp
+	"Fortunes.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\fortunes.h
+	"PouvoirSpecial.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\humain.cpp
+	"Humain.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\humain.h
+	"Race.h"
+
+1510261771 source:d:\projet sfml\projet-sfml-small-world\src\joueur.cpp
+	"../include/Joueur.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\joueur.h
+	"Peuple.h"
+
+1510262631 d:\projet sfml\projet-sfml-small-world\include\peuple.h
+	"Races/Race.h"
+	"Pouvoirs/PouvoirSpecial.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\mage.cpp
+	"Mage.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\mage.h
+	"Race.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\marchands.cpp
+	"Marchands.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\marchands.h
+	"PouvoirSpecial.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\nain.cpp
+	"Nain.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\nain.h
+	"Race.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\orc.cpp
+	"Orc.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\orc.h
+	"Race.h"
+
+1510156955 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirspecial.cpp
+	"PouvoirSpecial.h"
+
+1510258448 source:d:\projet sfml\projet-sfml-small-world\src\alchimistes.cpp
+	"Alchimistes.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\alchimistes.h
+	"PouvoirSpecial.h"
+
+1510261771 source:d:\projet sfml\projet-sfml-small-world\src\peuple.cpp
+	"../include/Peuple.h"
+
+1510156956 source:d:\projet sfml\projet-sfml-small-world\src\race.cpp
+	"Race.h"
+
+1510156956 source:d:\projet sfml\projet-sfml-small-world\src\volants.cpp
+	"Volants.h"
+
+1510156955 d:\projet sfml\projet-sfml-small-world\include\volants.h
+	"PouvoirSpecial.h"
+
+1510262581 source:d:\projet sfml\projet-sfml-small-world\main.cpp
+	"./include/main.h"
+
+1510262627 d:\projet sfml\projet-sfml-small-world\include\main.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	"./Races/Race.h"
+	"Peuple.h"
+	"./Races/Amazone.h"
+	"./Races/Elfe.h"
+	"./Races/Humain.h"
+	"./Races/Mage.h"
+	"./Races/Nain.h"
+	"./Races/Orc.h"
+	"./Pouvoirs/PouvoirSpecial.h"
+	"./Pouvoirs/Alchimistes.h"
+	"./Pouvoirs/Armes.h"
+	"./Pouvoirs/DesForets.h"
+	"./Pouvoirs/Fortunes.h"
+	"./Pouvoirs/Marchands.h"
+	"./Pouvoirs/Volants.h"
+	"Joueur.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\race.h
+	<string>
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\amazone.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\elfe.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\humain.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\mage.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\nain.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\race\orc.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\pouvoirspecial.h
+	<string>
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\alchimistes.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\armes.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\desforets.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\fortunes.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\marchands.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\volants.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\race.h
+	<string>
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\pouvoirspecial.h
+	<string>
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\amazone.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\elfe.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\humain.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\mage.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\nain.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\races\orc.h
+	"Race.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\alchimistes.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\armes.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\desforets.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\fortunes.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\marchands.h
+	"PouvoirSpecial.h"
+
+1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\volants.h
+	"PouvoirSpecial.h"
+
