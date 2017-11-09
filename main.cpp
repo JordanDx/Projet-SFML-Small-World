@@ -1,28 +1,4 @@
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <iostream>
-#include <vector>
-#include <stdlib.h>
-#include <time.h>
-
-#include "Race.h"
-#include "Peuple.h"
-#include "Amazone.h"
-#include "Elfe.h"
-#include "Humain.h"
-#include "Mage.h"
-#include "Nain.h"
-#include "Orc.h"
-
-#include "PouvoirSpecial.h"
-#include "Alchimistes.h"
-#include "Armes.h"
-#include "DesForets.h"
-#include "Fortunes.h"
-#include "Marchands.h"
-#include "Volants.h"
-
-#include "Joueur.h"
+#include "./include/main.h"
 
 using namespace std;
 using namespace sf;

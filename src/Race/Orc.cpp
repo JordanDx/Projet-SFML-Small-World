@@ -1,4 +1,4 @@
-#include "Orc.h"
+#include "../include/Race/Orc.h"
 
 Orc::Orc() : Race("Orc",5)
 {

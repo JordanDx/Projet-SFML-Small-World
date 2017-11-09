@@ -1,4 +1,4 @@
-#include "Amazone.h"
+#include "../include/Race/Amazone.h"
 
 Amazone::Amazone() : Race("Amazone",6)
 {

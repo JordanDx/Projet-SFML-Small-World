@@ -1,4 +1,4 @@
-#include "PouvoirSpecial.h"
+#include "../include/Pouvoir/PouvoirSpecial.h"
 using namespace std;
 
 PouvoirSpecial::PouvoirSpecial(string nom, int nbUnites) : nom(nom), nbUnites(nbUnites)

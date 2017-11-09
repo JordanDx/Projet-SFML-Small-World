@@ -1,4 +1,4 @@
-#include "Volants.h"
+#include "../include/Pouvoir/Volants.h"
 
 Volants::Volants() : PouvoirSpecial("Volants", 5)
 {

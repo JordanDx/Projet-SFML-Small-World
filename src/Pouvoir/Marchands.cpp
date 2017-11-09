@@ -1,4 +1,4 @@
-#include "Marchands.h"
+#include "../include/Pouvoir/Marchands.h"
 
 Marchands::Marchands() : PouvoirSpecial("Marchands", 2)
 {

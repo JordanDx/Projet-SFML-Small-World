@@ -1,4 +1,4 @@
-#include "Joueur.h"
+#include "../include/Joueur.h"
 
 using namespace std;
 

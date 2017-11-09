@@ -1,4 +1,4 @@
-#include "Fortunes.h"
+#include "../include/Pouvoir/Fortunes.h"
 
 Fortunes::Fortunes() : PouvoirSpecial("Fortunes", 4)
 {

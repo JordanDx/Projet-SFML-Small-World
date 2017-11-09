@@ -1,4 +1,4 @@
-#include "DesForets.h"
+#include "../include/Pouvoir/DesForets.h"
 
 DesForets::DesForets() : PouvoirSpecial("DesForets",4)
 {

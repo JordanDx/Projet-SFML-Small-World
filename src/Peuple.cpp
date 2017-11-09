@@ -1,4 +1,5 @@
-#include "Peuple.h"
+#include "../include/Peuple.h"
+
 using namespace std;
 
 Peuple::Peuple(Race race, PouvoirSpecial pouvoir) : race(race), pouvoir(pouvoir)

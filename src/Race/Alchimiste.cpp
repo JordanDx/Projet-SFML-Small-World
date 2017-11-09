@@ -1,4 +1,4 @@
-#include "Alchimiste.h"
+#include "../include/Race/Alchimiste.h"
 
 Alchimiste::Alchimiste() : PouvoirSpecial("Alchimiste", 4)
 {

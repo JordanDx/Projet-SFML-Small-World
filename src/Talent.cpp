@@ -1,4 +1,4 @@
-#include "Talent.h"
+#include "../include/Talent.h"
 
 Talent::Talent()
 {
