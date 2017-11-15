@@ -9,6 +9,7 @@ class PouvoirSpecial
         PouvoirSpecial(std::string nom, int nbUnites);
         virtual ~PouvoirSpecial();
         std::string getNom() const;
+        int getNbUnites() const;
 
     protected:
 

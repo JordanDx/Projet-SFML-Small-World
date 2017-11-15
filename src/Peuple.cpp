@@ -4,6 +4,8 @@ using namespace std;
 
 Peuple::Peuple(Race race, PouvoirSpecial pouvoir) : race(race), pouvoir(pouvoir)
 {
+    nbUnites = race.getNbUnites() + pouvoir.getNbUnites();
+   // nbUnites = race.getNbUnites();
 }
 
 
@@ -14,12 +16,21 @@ Peuple::~Peuple()
 
 string Peuple::toString() const
 {
-    return "Race : " + race.getNom() + " / " + "Pouvoir : " + pouvoir.getNom();
+    return "Race : " + race.getNom() + " / Pouvoir : " + pouvoir.getNom();
 }
 
-void Peuple::augmenterNbPieces()
+void Peuple::incrementerNbPieces()
 {
     nbPieces++;
 }
 
+int Peuple::getNbPieces() const
+{
+    return nbPieces;
+}
+
+int Peuple::getNbUnites() const
+{
+    return nbUnites;
+}
 

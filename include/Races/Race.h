@@ -9,6 +9,7 @@ class Race
         Race(std::string nom, int nbUnites);
         virtual ~Race();
         std::string getNom() const;
+        int getNbUnites() const;
 
     protected:
 

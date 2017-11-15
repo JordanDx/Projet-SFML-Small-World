@@ -653,13 +653,17 @@
 1510156955 d:\projet sfml\projet-sfml-small-world\include\humain.h
 	"Race.h"
 
-1510261771 source:d:\projet sfml\projet-sfml-small-world\src\joueur.cpp
+1510763281 source:d:\projet sfml\projet-sfml-small-world\src\joueur.cpp
 	"../include/Joueur.h"
+	<stdio.h>
+	<sstream>
 
-1510156955 d:\projet sfml\projet-sfml-small-world\include\joueur.h
+1510763257 d:\projet sfml\projet-sfml-small-world\include\joueur.h
 	"Peuple.h"
+	"Partie.h"
+	<vector>
 
-1510262631 d:\projet sfml\projet-sfml-small-world\include\peuple.h
+1510661452 d:\projet sfml\projet-sfml-small-world\include\peuple.h
 	"Races/Race.h"
 	"Pouvoirs/PouvoirSpecial.h"
 
@@ -696,7 +700,7 @@
 1510156955 d:\projet sfml\projet-sfml-small-world\include\alchimistes.h
 	"PouvoirSpecial.h"
 
-1510261771 source:d:\projet sfml\projet-sfml-small-world\src\peuple.cpp
+1510663124 source:d:\projet sfml\projet-sfml-small-world\src\peuple.cpp
 	"../include/Peuple.h"
 
 1510156956 source:d:\projet sfml\projet-sfml-small-world\src\race.cpp
@@ -708,20 +712,21 @@
 1510156955 d:\projet sfml\projet-sfml-small-world\include\volants.h
 	"PouvoirSpecial.h"
 
-1510262581 source:d:\projet sfml\projet-sfml-small-world\main.cpp
+1510678279 source:d:\projet sfml\projet-sfml-small-world\main.cpp
 	"./include/main.h"
 
-1510262627 d:\projet sfml\projet-sfml-small-world\include\main.h
+1510678658 d:\projet sfml\projet-sfml-small-world\include\main.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
 	<vector>
 	<stdlib.h>
 	<time.h>
-	"./Races/Race.h"
 	"Peuple.h"
+	"./Races/Race.h"
 	"./Races/Amazone.h"
 	"./Races/Elfe.h"
+	"./Races/HommeRat.h"
 	"./Races/Humain.h"
 	"./Races/Mage.h"
 	"./Races/Nain.h"
@@ -729,11 +734,13 @@
 	"./Pouvoirs/PouvoirSpecial.h"
 	"./Pouvoirs/Alchimistes.h"
 	"./Pouvoirs/Armes.h"
+	"./Pouvoirs/DesMarais.h"
 	"./Pouvoirs/DesForets.h"
 	"./Pouvoirs/Fortunes.h"
 	"./Pouvoirs/Marchands.h"
 	"./Pouvoirs/Volants.h"
 	"Joueur.h"
+	"Partie.h"
 
 1510261771 d:\projet sfml\projet-sfml-small-world\include\race\race.h
 	<string>
@@ -777,10 +784,10 @@
 1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoir\volants.h
 	"PouvoirSpecial.h"
 
-1510261771 d:\projet sfml\projet-sfml-small-world\include\races\race.h
+1510661240 d:\projet sfml\projet-sfml-small-world\include\races\race.h
 	<string>
 
-1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\pouvoirspecial.h
+1510661236 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\pouvoirspecial.h
 	<string>
 
 1510261771 d:\projet sfml\projet-sfml-small-world\include\races\amazone.h
@@ -818,4 +825,106 @@
 
 1510261771 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\volants.h
 	"PouvoirSpecial.h"
+
+1510605078 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\alchimistes.cpp
+	"../include/Pouvoirs/Alchimistes.h"
+
+1510605082 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\armes.cpp
+	"../include/Pouvoirs/Armes.h"
+
+1510605084 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\desforets.cpp
+	"../include/Pouvoirs/DesForets.h"
+
+1510605087 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\fortunes.cpp
+	"../include/Pouvoirs/Fortunes.h"
+
+1510605089 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\marchands.cpp
+	"../include/Pouvoirs/Marchands.h"
+
+1510606753 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\pouvoirspecial.cpp
+	"../include/Pouvoirs/PouvoirSpecial.h"
+
+1510605093 source:d:\projet sfml\projet-sfml-small-world\src\pouvoir\volants.cpp
+	"../include/Pouvoirs/Volants.h"
+
+1510605096 source:d:\projet sfml\projet-sfml-small-world\src\race\amazone.cpp
+	"../include/Races/Amazone.h"
+
+1510605100 source:d:\projet sfml\projet-sfml-small-world\src\race\elfe.cpp
+	"../include/Races/Elfe.h"
+
+1510605103 source:d:\projet sfml\projet-sfml-small-world\src\race\humain.cpp
+	"../include/Races/Humain.h"
+
+1510605106 source:d:\projet sfml\projet-sfml-small-world\src\race\mage.cpp
+	"../include/Races/Mage.h"
+
+1510605109 source:d:\projet sfml\projet-sfml-small-world\src\race\nain.cpp
+	"../include/Races/Nain.h"
+
+1510605111 source:d:\projet sfml\projet-sfml-small-world\src\race\orc.cpp
+	"../include/Races/Orc.h"
+
+1510608584 source:d:\projet sfml\projet-sfml-small-world\src\race\race.cpp
+	"../include/Races/Race.h"
+
+1510676143 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\alchimistes.cpp
+	"Alchimistes.h"
+
+1510676121 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\armes.cpp
+	"Armes.h"
+
+1510676127 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\desforets.cpp
+	"DesForets.h"
+
+1510605087 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\fortunes.cpp
+	"../include/Pouvoirs/Fortunes.h"
+
+1510676132 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\marchands.cpp
+	"Marchands.h"
+
+1510676136 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\pouvoirspecial.cpp
+	"PouvoirSpecial.h"
+
+1510676131 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\volants.cpp
+	"Volants.h"
+
+1510605096 source:d:\projet sfml\projet-sfml-small-world\src\races\amazone.cpp
+	"../include/Races/Amazone.h"
+
+1510605100 source:d:\projet sfml\projet-sfml-small-world\src\races\elfe.cpp
+	"../include/Races/Elfe.h"
+
+1510605103 source:d:\projet sfml\projet-sfml-small-world\src\races\humain.cpp
+	"../include/Races/Humain.h"
+
+1510605106 source:d:\projet sfml\projet-sfml-small-world\src\races\mage.cpp
+	"../include/Races/Mage.h"
+
+1510605109 source:d:\projet sfml\projet-sfml-small-world\src\races\nain.cpp
+	"../include/Races/Nain.h"
+
+1510605111 source:d:\projet sfml\projet-sfml-small-world\src\races\orc.cpp
+	"../include/Races/Orc.h"
+
+1510608584 source:d:\projet sfml\projet-sfml-small-world\src\races\race.cpp
+	"../include/Races/Race.h"
+
+1510665051 source:d:\projet sfml\projet-sfml-small-world\src\races\hommerat.cpp
+	"HommeRat.h"
+
+1510665020 d:\projet sfml\projet-sfml-small-world\include\races\hommerat.h
+	<Race.h>
+
+1510675983 source:d:\projet sfml\projet-sfml-small-world\src\pouvoirs\desmarais.cpp
+	"DesMarais.h"
+
+1510675945 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\desmarais.h
+	"PouvoirSpecial.h"
+
+1510763697 source:d:\projet sfml\projet-sfml-small-world\src\partie.cpp
+	"Partie.h"
+
+1510678659 d:\projet sfml\projet-sfml-small-world\include\partie.h
+	"main.h"
 

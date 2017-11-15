@@ -10,7 +10,9 @@ class Peuple
         Peuple(Race race, PouvoirSpecial pouvoir);
         virtual ~Peuple();
         std::string toString() const;
-        void augmenterNbPieces();
+        void incrementerNbPieces();
+        int getNbPieces() const;
+        int getNbUnites() const;
 
     protected:
 

@@ -14,6 +14,8 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="include/Races" />
+					<Add directory="include/Pouvoirs" />
 				</Compiler>
 				<Linker>
 					<Add library="D:/SFML-2.4.2/lib/libsfml-audio-d.a" />
@@ -30,6 +32,8 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="include/Races" />
+					<Add directory="include/Pouvoirs" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -47,39 +51,46 @@
 		<Linker>
 			<Add directory="D:/SFML-2.4.2/lib" />
 		</Linker>
-		<Unit filename="include/Alchimistes.h" />
-		<Unit filename="include/Amazone.h" />
-		<Unit filename="include/Armes.h" />
-		<Unit filename="include/DesForets.h" />
-		<Unit filename="include/Elfe.h" />
-		<Unit filename="include/Fortunes.h" />
-		<Unit filename="include/Humain.h" />
 		<Unit filename="include/Joueur.h" />
-		<Unit filename="include/Mage.h" />
-		<Unit filename="include/Marchands.h" />
-		<Unit filename="include/Nain.h" />
-		<Unit filename="include/Orc.h" />
+		<Unit filename="include/Partie.h" />
 		<Unit filename="include/Peuple.h" />
-		<Unit filename="include/PouvoirSpecial.h" />
-		<Unit filename="include/Race.h" />
-		<Unit filename="include/Volants.h" />
+		<Unit filename="include/Pouvoirs/Alchimistes.h" />
+		<Unit filename="include/Pouvoirs/Armes.h" />
+		<Unit filename="include/Pouvoirs/DesForets.h" />
+		<Unit filename="include/Pouvoirs/DesMarais.h" />
+		<Unit filename="include/Pouvoirs/Fortunes.h" />
+		<Unit filename="include/Pouvoirs/Marchands.h" />
+		<Unit filename="include/Pouvoirs/PouvoirSpecial.h" />
+		<Unit filename="include/Pouvoirs/Volants.h" />
+		<Unit filename="include/Races/Amazone.h" />
+		<Unit filename="include/Races/Elfe.h" />
+		<Unit filename="include/Races/HommeRat.h" />
+		<Unit filename="include/Races/Humain.h" />
+		<Unit filename="include/Races/Mage.h" />
+		<Unit filename="include/Races/Nain.h" />
+		<Unit filename="include/Races/Orc.h" />
+		<Unit filename="include/Races/Race.h" />
+		<Unit filename="include/main.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Alchimistes.cpp" />
-		<Unit filename="src/Amazone.cpp" />
-		<Unit filename="src/Armes.cpp" />
-		<Unit filename="src/DesForets.cpp" />
-		<Unit filename="src/Elfe.cpp" />
-		<Unit filename="src/Fortunes.cpp" />
-		<Unit filename="src/Humain.cpp" />
 		<Unit filename="src/Joueur.cpp" />
-		<Unit filename="src/Mage.cpp" />
-		<Unit filename="src/Marchands.cpp" />
-		<Unit filename="src/Nain.cpp" />
-		<Unit filename="src/Orc.cpp" />
+		<Unit filename="src/Partie.cpp" />
 		<Unit filename="src/Peuple.cpp" />
-		<Unit filename="src/PouvoirSpecial.cpp" />
-		<Unit filename="src/Race.cpp" />
-		<Unit filename="src/Volants.cpp" />
+		<Unit filename="src/Pouvoirs/Alchimistes.cpp" />
+		<Unit filename="src/Pouvoirs/Armes.cpp" />
+		<Unit filename="src/Pouvoirs/DesForets.cpp" />
+		<Unit filename="src/Pouvoirs/DesMarais.cpp" />
+		<Unit filename="src/Pouvoirs/Fortunes.cpp" />
+		<Unit filename="src/Pouvoirs/Marchands.cpp" />
+		<Unit filename="src/Pouvoirs/PouvoirSpecial.cpp" />
+		<Unit filename="src/Pouvoirs/Volants.cpp" />
+		<Unit filename="src/Races/Amazone.cpp" />
+		<Unit filename="src/Races/Elfe.cpp" />
+		<Unit filename="src/Races/HommeRat.cpp" />
+		<Unit filename="src/Races/Humain.cpp" />
+		<Unit filename="src/Races/Mage.cpp" />
+		<Unit filename="src/Races/Nain.cpp" />
+		<Unit filename="src/Races/Orc.cpp" />
+		<Unit filename="src/Races/Race.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
