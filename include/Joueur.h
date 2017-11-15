@@ -2,8 +2,10 @@
 #define JOUEUR_H
 
 #include "Peuple.h"
-#include "Partie.h"
 #include <vector>
+
+class Partie;
+
 
 class Joueur
 {
@@ -15,8 +17,7 @@ class Joueur
         int getNbPieces() const;
         std::string toString();
         void passerEnDeclin();
-        void choisirNouveauPeuple(std::vector<Peuple> & peuples);
-
+        void choisirNouveauPeuple(Partie * partie, std::vector<Peuple> & peuples);
 
 
     protected:

@@ -1,6 +1,7 @@
 #include "../include/Joueur.h"
 #include <stdio.h>
 #include <sstream>
+#include "Partie.h"
 
 
 
@@ -37,14 +38,25 @@ void Joueur::passerEnDeclin()
     peupleActif = 0;
 }
 
- void Joueur::choisirNouveauPeuple(vector<Peuple> & peuples)
+
+ void Joueur::choisirNouveauPeuple(Partie * partie, vector<Peuple> & peuples)
 {
     //CHOIX CONSOLE
-    int choixPeuple;
+    int choixPeuple = peuples.size();
     printf("Quel peuple ?\n");
-    scanf("%d", &choixPeuple);
-    printf("Votre choix : %d\n", choixPeuple);
+    while(choixPeuple >= peuples.size())
+    {
+        scanf("%d", &choixPeuple);
+        printf("Votre choix : %d\n", choixPeuple);
+    }
     //////////////////////////////////////////
+
+
+    if(choixPeuple >= peuples.size())
+    {
+        printf("Choix impossible\n");
+        return;
+    }
 
 
     //On pose une pièce du joueur sur chaque peuple au-dessus de celui choisi
@@ -57,11 +69,11 @@ void Joueur::passerEnDeclin()
     nouveauPeupleActif(&peuples.at(choixPeuple));
     nbPieces += peupleActif->getNbPieces(); //Gagne les pièces qui sont potentiellement sur le peuple choisi
 
-
-
-
-
+    //Mise à jour de la liste des peuples.
+    partie->miseAJourPeuples(choixPeuple);
 }
+
+
 
 
 string Joueur::toString()

@@ -1,5 +1,6 @@
 #include "./include/main.h"
 
+#include "Partie.h"
 
 int main()
 {

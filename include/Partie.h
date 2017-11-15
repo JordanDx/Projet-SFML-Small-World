@@ -4,6 +4,7 @@
 
 #include "main.h"
 
+
 class Partie
 {
     public:
@@ -11,8 +12,9 @@ class Partie
         virtual ~Partie();
         void iniatiliserJeu();
         int initialiserSons();
-        void ajouterPeuple();
+        void miseAJourPeuples(int rang);
         int lancerPartie();
+        std::vector<Peuple> getPeuples() const;
 
     protected:
 

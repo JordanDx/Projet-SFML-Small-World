@@ -98,11 +98,20 @@ int Partie::initialiserSons()
     return 0;
 }
 
-void Partie::ajouterPeuple()
+void Partie::miseAJourPeuples(int rang)
 {
+    //Supression du peuple choisi dans peuples
+    peuples.erase(peuples.begin() + rang);
+
+    //Rajout d'un peuple
     peuples.push_back(Peuple(racesMelangees.at(0), pouvoirsMelanges.at(0)));
     racesMelangees.erase(racesMelangees.begin());
     pouvoirsMelanges.erase(pouvoirsMelanges.begin());
+}
+
+vector<Peuple> Partie::getPeuples() const
+{
+    return peuples;
 }
 
 
@@ -111,9 +120,18 @@ int Partie::lancerPartie()
 {
     iniatiliserJeu();
     //initialiserSons();
-
     Joueur joueur1;
     Joueur joueur2;
+    unsigned int numeroTour = 0;
+    unsigned int nbToursTotal = 2;
+
+
+    /*
+    while(numeroTour < nbToursTotal)
+    {
+        numeroTour++;
+    }
+*/
 
     //Nb unites des peuples
     for(unsigned int i=0; i<peuples.size(); i++)
@@ -121,11 +139,13 @@ int Partie::lancerPartie()
         cout << "Nb unites peuple num  " << i << " : " << peuples.at(i).getNbUnites() << endl;
     }
 
-    joueur1.choisirNouveauPeuple(peuples);
+    joueur1.choisirNouveauPeuple(this, peuples);
     cout << joueur1.toString() << endl;
 
-    joueur2.choisirNouveauPeuple(peuples);
-    cout << joueur2.toString() << endl;
+
+
+    //joueur2.choisirNouveauPeuple(peuples);
+    //cout << joueur2.toString() << endl;
 
      for(unsigned int i=0; i<peuples.size(); i++)
     {
