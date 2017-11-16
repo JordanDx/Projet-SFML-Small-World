@@ -129,6 +129,22 @@ void Partie::afficherPeuples()
 
 int Partie::lancerPartie()
 {
+    RenderWindow window;
+    window.create(VideoMode(1136,689), "SmallWorld");
+
+    Texture texture_carte;
+    Sprite carte;
+
+    if(!texture_carte.loadFromFile("./Images/Map.jpg"))
+    {
+        cout << "An error occurred." << endl;
+    }
+    else
+    {
+        carte.setTexture(texture_carte);
+    }
+
+
     iniatiliserJeu();
     //initialiserSons();
     //Joueur joueur1;
@@ -139,24 +155,40 @@ int Partie::lancerPartie()
 
     //Création des joueurs
     vector<Joueur> joueurs;
-    for(unsigned int i=0; i<nbJoueurs; i++)
+    while(window.isOpen())
     {
-        joueurs.push_back(Joueur());
-    }
+        Event event;
+        while(window.pollEvent(event))
+        {
+            if(event.type == Event::Closed)
+                window.close();
+        }
 
-    while(numeroTour < nbToursTotal)
-    {
+        window.clear();
+
+        window.draw(carte);
+
+        window.display();
 
         for(unsigned int i=0; i<nbJoueurs; i++)
         {
-            //afficherPeuples();
-            joueurs.at(i).debutTour(this);
-
+            joueurs.push_back(Joueur());
         }
 
-        numeroTour++;
-    }
+        while(numeroTour < nbToursTotal)
+        {
 
+            for(unsigned int i=0; i<nbJoueurs; i++)
+            {
+                //afficherPeuples();
+                joueurs.at(i).debutTour(this);
+
+            }
+
+            numeroTour++;
+        }
+
+    }
 
 
 
