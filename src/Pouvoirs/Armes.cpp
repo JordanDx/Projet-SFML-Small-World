@@ -1,4 +1,4 @@
-#include "Armes.h"
+#include "../../include/Pouvoirs/Armes.h"
 
 Armes::Armes() : PouvoirSpecial("Armes",4)
 {

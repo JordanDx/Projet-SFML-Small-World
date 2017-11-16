@@ -1,4 +1,4 @@
-#include "../include/Races/Nain.h"
+#include "../../include/Races/Nain.h"
 
 Nain::Nain() : Race("Nain",3)
 {

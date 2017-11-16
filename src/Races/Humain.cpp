@@ -1,4 +1,4 @@
-#include "../include/Races/Humain.h"
+#include "../../include/Races/Humain.h"
 
 Humain::Humain() : Race("Humain",5)
 {

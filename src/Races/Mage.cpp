@@ -1,4 +1,4 @@
-#include "../include/Races/Mage.h"
+#include "../../include/Races/Mage.h"
 
 Mage::Mage() : Race("Mage",5)
 {

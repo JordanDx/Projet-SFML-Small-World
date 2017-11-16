@@ -1,4 +1,4 @@
-#include "Partie.h"
+#include "../include/Partie.h"
 
 
 using namespace std;

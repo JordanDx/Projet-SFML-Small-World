@@ -1,8 +1,7 @@
 #ifndef HOMMERAT_H
 #define HOMMERAT_H
 
-#include <Race.h>
-
+#include "Race.h"
 
 class HommeRat : public Race
 {

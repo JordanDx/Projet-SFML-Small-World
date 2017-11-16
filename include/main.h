@@ -25,4 +25,4 @@
 #include "./Pouvoirs/Volants.h"
 
 #include "Joueur.h"
-
+#include "Partie.h"

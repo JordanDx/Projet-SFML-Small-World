@@ -1,7 +1,7 @@
 #include "../include/Joueur.h"
 #include <stdio.h>
 #include <sstream>
-#include "Partie.h"
+#include "../include/Partie.h"
 
 
 
