@@ -130,12 +130,11 @@ void Partie::afficherPeuples()
 int Partie::lancerPartie()
 {
     RenderWindow window;
-    window.create(VideoMode(1136,689), "SmallWorld");
-
+    window.create(VideoMode(1280,720), "SmallWorld");
     Texture texture_carte;
     Sprite carte;
 
-    if(!texture_carte.loadFromFile("./Images/Map.jpg"))
+    if(!texture_carte.loadFromFile("./Images/Map.png"))
     {
         cout << "An error occurred." << endl;
     }

@@ -3,7 +3,8 @@
 
 
 #include "main.h"
-
+using namespace sf;
+using namespace std;
 
 class Partie
 {
