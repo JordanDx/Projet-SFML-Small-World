@@ -774,20 +774,20 @@
 1510768704 /home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/include/Pouvoirs/Volants.h
 	"PouvoirSpecial.h"
 
-1510844247 /home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/include/Joueur.h
+1510846734 /home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/include/Joueur.h
 	"Peuple.h"
 	<vector>
 
-1510844247 /home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/include/Partie.h
+1510846734 /home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/include/Partie.h
 	"main.h"
 
-1510845726 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Joueur.cpp
+1510846734 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Joueur.cpp
 	"../include/Joueur.h"
 	<stdio.h>
 	<sstream>
 	"../include/Partie.h"
 
-1510845796 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Partie.cpp
+1510846734 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Partie.cpp
 	"../include/Partie.h"
 
 1510768704 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Peuple.cpp
@@ -838,9 +838,8 @@
 1510846475 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Races/Orc.cpp
 	"../../include/Races/Orc.h"
 
-1510768704 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Races/Race.cpp
-	"../include/Races/Race.h"
-
+1510846482 source:/home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/src/Races/Race.cpp
+	"../../include/Races/Race.h"
 
 1510665020 d:\projet sfml\projet-sfml-small-world\include\races\hommerat.h
 	<Race.h>
@@ -856,4 +855,31 @@
 
 1510843059 d:\projet sfml\projet-sfml-small-world\include\partie.h
 	"main.h"
+
+1510845068 /home/yoann/Fac/L3/S5/Projet/Projet-SFML-Small-World/include/main.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	"Peuple.h"
+	"./Races/Race.h"
+	"./Races/Amazone.h"
+	"./Races/Elfe.h"
+	"./Races/HommeRat.h"
+	"./Races/Humain.h"
+	"./Races/Mage.h"
+	"./Races/Nain.h"
+	"./Races/Orc.h"
+	"./Pouvoirs/PouvoirSpecial.h"
+	"./Pouvoirs/Alchimistes.h"
+	"./Pouvoirs/Armes.h"
+	"./Pouvoirs/DesMarais.h"
+	"./Pouvoirs/DesForets.h"
+	"./Pouvoirs/Fortunes.h"
+	"./Pouvoirs/Marchands.h"
+	"./Pouvoirs/Volants.h"
+	"Joueur.h"
+	"Partie.h"
 
