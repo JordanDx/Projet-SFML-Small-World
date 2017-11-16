@@ -653,13 +653,13 @@
 1510156955 d:\projet sfml\projet-sfml-small-world\include\humain.h
 	"Race.h"
 
-1510779545 source:d:\projet sfml\projet-sfml-small-world\src\joueur.cpp
+1510845470 source:d:\projet sfml\projet-sfml-small-world\src\joueur.cpp
 	"../include/Joueur.h"
 	<stdio.h>
 	<sstream>
 	"Partie.h"
 
-1510778985 d:\projet sfml\projet-sfml-small-world\include\joueur.h
+1510843644 d:\projet sfml\projet-sfml-small-world\include\joueur.h
 	"Peuple.h"
 	<vector>
 
@@ -922,9 +922,9 @@
 1510675945 d:\projet sfml\projet-sfml-small-world\include\pouvoirs\desmarais.h
 	"PouvoirSpecial.h"
 
-1510779062 source:d:\projet sfml\projet-sfml-small-world\src\partie.cpp
+1510845503 source:d:\projet sfml\projet-sfml-small-world\src\partie.cpp
 	"Partie.h"
 
-1510778956 d:\projet sfml\projet-sfml-small-world\include\partie.h
+1510843059 d:\projet sfml\projet-sfml-small-world\include\partie.h
 	"main.h"
 

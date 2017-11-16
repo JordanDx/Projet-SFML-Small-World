@@ -17,7 +17,8 @@ class Joueur
         int getNbPieces() const;
         std::string toString();
         void passerEnDeclin();
-        void choisirNouveauPeuple(Partie * partie, std::vector<Peuple> & peuples);
+        void choisirNouveauPeuple(Partie * partie);
+        void debutTour(Partie * partie);
 
 
     protected:
