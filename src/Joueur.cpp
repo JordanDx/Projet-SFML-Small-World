@@ -13,6 +13,8 @@ Joueur::Joueur()
 
 Joueur::~Joueur()
 {
+    delete peupleActif;
+    delete peupleDeclin;
 }
 
 
@@ -20,7 +22,6 @@ void Joueur::nouveauPeupleActif(Peuple * nouveauPeuple)
 {
     peupleActif = nouveauPeuple;
 }
-
 
 void Joueur::ajouterPieces(int nbPiecesAjoutees)
 {
@@ -38,43 +39,40 @@ void Joueur::passerEnDeclin()
     peupleActif = 0;
 }
 
-
- void Joueur::choisirNouveauPeuple(Partie * partie, vector<Peuple> & peuples)
+void Joueur::choisirNouveauPeuple(Partie * partie)
 {
     //CHOIX CONSOLE
-    int choixPeuple = peuples.size();
+    unsigned int taillePeuples = partie->getPeuples().size();
+    unsigned int choixPeuple = taillePeuples;
     printf("Quel peuple ?\n");
-    while(choixPeuple >= peuples.size())
+    while(choixPeuple >= taillePeuples)
     {
         scanf("%d", &choixPeuple);
-        printf("Votre choix : %d\n", choixPeuple);
     }
-    //////////////////////////////////////////
 
-
-    if(choixPeuple >= peuples.size())
+    if(choixPeuple >= taillePeuples)
     {
         printf("Choix impossible\n");
         return;
     }
+    //////////////////////////////////////////
 
 
     //On pose une pièce du joueur sur chaque peuple au-dessus de celui choisi
-    for(int i=0; i<choixPeuple; i++)
+    for(unsigned int i=0; i<choixPeuple; i++)
     {
-        peuples.at(i).incrementerNbPieces();
+        //(*partie->getPeuples()).at(i).incrementerNbPieces();
+        partie->getPeuples().at(i)->incrementerNbPieces();
         nbPieces--;
     }
 
-    nouveauPeupleActif(&peuples.at(choixPeuple));
+    nouveauPeupleActif(partie->getPeuples().at(choixPeuple));
     nbPieces += peupleActif->getNbPieces(); //Gagne les pièces qui sont potentiellement sur le peuple choisi
 
     //Mise à jour de la liste des peuples.
     partie->miseAJourPeuples(choixPeuple);
+
 }
-
-
-
 
 string Joueur::toString()
 {
@@ -104,4 +102,44 @@ string Joueur::toString()
     return texte;
 }
 
+
+
+void Joueur::debutTour(Partie * partie)
+{
+    unsigned int choix = 0;
+
+    printf("====================\n");
+    printf("==== DEBUT TOUR ====\n");
+    printf("====================\n");
+    if(peupleActif == 0)
+    {
+        partie->afficherPeuples();
+        choisirNouveauPeuple(partie);
+    }
+
+
+    while(choix != 1 && choix != 2)
+    {
+        printf("1 - Passer en declin\n2- Attaquer ?\n");
+        scanf("%d", &choix);
+    }
+    switch(choix)
+    {
+        case 1:
+            printf("Vous avez choisi de passer en declin\n");
+            passerEnDeclin();
+            break;
+        case 2:
+            printf("Vous avez choisi d'attaquer\n");
+            break;
+
+    }
+
+
+    cout << toString() << endl;
+
+
+
+
+}
 

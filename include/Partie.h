@@ -14,14 +14,15 @@ class Partie
         int initialiserSons();
         void miseAJourPeuples(int rang);
         int lancerPartie();
-        std::vector<Peuple> getPeuples() const;
+        std::vector<Peuple*> getPeuples();
+        void afficherPeuples();
 
     protected:
 
     private:
         std::vector<Race> racesMelangees;
         std::vector<PouvoirSpecial> pouvoirsMelanges;
-        std::vector<Peuple> peuples;
+        std::vector<Peuple*> peuples;
 };
 
 #endif // PARTIE_H

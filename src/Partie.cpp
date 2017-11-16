@@ -11,7 +11,12 @@ Partie::Partie()
 
 Partie::~Partie()
 {
-    //dtor
+
+    for(unsigned int i=1; i<peuples.size(); i++)
+    {
+      peuples[i];
+    }
+
 }
 
 void Partie::iniatiliserJeu()
@@ -65,17 +70,10 @@ void Partie::iniatiliserJeu()
     //Peuples (combinaisons Race + PouvoirSpecial) choisis au hasard que peuvent prendre les joueurs
     for(int i=0; i<nombrePeuplesDisponibles; i++)
     {
-        peuples.push_back(Peuple(racesMelangees.at(0), pouvoirsMelanges.at(0)));
+        peuples.push_back(new Peuple(racesMelangees.at(0), pouvoirsMelanges.at(0)));
         racesMelangees.erase(racesMelangees.begin());
         pouvoirsMelanges.erase(pouvoirsMelanges.begin());
     }
-
-
-    for(unsigned int i=0; i<peuples.size(); i++)
-    {
-        cout << "Nom numero " << i << " : " << peuples.at(i).toString() << endl;
-    }
-
 }
 
 int Partie::initialiserSons()
@@ -98,20 +96,33 @@ int Partie::initialiserSons()
     return 0;
 }
 
+
 void Partie::miseAJourPeuples(int rang)
 {
     //Supression du peuple choisi dans peuples
     peuples.erase(peuples.begin() + rang);
 
     //Rajout d'un peuple
-    peuples.push_back(Peuple(racesMelangees.at(0), pouvoirsMelanges.at(0)));
+    peuples.push_back(new Peuple(racesMelangees.at(0), pouvoirsMelanges.at(0)));
     racesMelangees.erase(racesMelangees.begin());
     pouvoirsMelanges.erase(pouvoirsMelanges.begin());
 }
 
-vector<Peuple> Partie::getPeuples() const
+
+
+vector<Peuple*> Partie::getPeuples()
 {
-    return peuples;
+    return  peuples;
+}
+
+
+void Partie::afficherPeuples()
+{
+     for(unsigned int i=0; i<peuples.size(); i++)
+    {
+        cout << "Nom numero " << i << " : " << peuples.at(i)->toString();
+        cout << " / nbUnites : " << peuples.at(i)->getNbUnites() << endl;
+    }
 }
 
 
@@ -120,37 +131,35 @@ int Partie::lancerPartie()
 {
     iniatiliserJeu();
     //initialiserSons();
-    Joueur joueur1;
-    Joueur joueur2;
+    //Joueur joueur1;
+    //Joueur joueur2;
     unsigned int numeroTour = 0;
     unsigned int nbToursTotal = 2;
+    unsigned int nbJoueurs = 2;
 
+    //Création des joueurs
+    vector<Joueur> joueurs;
+    for(unsigned int i=0; i<nbJoueurs; i++)
+    {
+        joueurs.push_back(Joueur());
+    }
 
-    /*
     while(numeroTour < nbToursTotal)
     {
+
+        for(unsigned int i=0; i<nbJoueurs; i++)
+        {
+            //afficherPeuples();
+            joueurs.at(i).debutTour(this);
+
+        }
+
         numeroTour++;
     }
-*/
-
-    //Nb unites des peuples
-    for(unsigned int i=0; i<peuples.size(); i++)
-    {
-        cout << "Nb unites peuple num  " << i << " : " << peuples.at(i).getNbUnites() << endl;
-    }
-
-    joueur1.choisirNouveauPeuple(this, peuples);
-    cout << joueur1.toString() << endl;
 
 
 
-    //joueur2.choisirNouveauPeuple(peuples);
-    //cout << joueur2.toString() << endl;
 
-     for(unsigned int i=0; i<peuples.size(); i++)
-    {
-        cout << "Nom numero " << i << " : " << peuples.at(i).toString() << endl;
-    }
 
 
 
