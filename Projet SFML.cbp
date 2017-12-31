@@ -13,13 +13,13 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add library="lib/libsfml-window.so" />
-					<Add library="lib/libsfml-system.so" />
-					<Add library="lib/libsfml-network.so" />
-					<Add library="lib/libsfml-graphics.so" />
-					<Add library="lib/libsfml-audio.so" />
+					<Add library="../../SFML-2.4.2/lib/libsfml-audio-d.a" />
+					<Add library="../../SFML-2.4.2/lib/libsfml-graphics-d.a" />
+					<Add library="../../SFML-2.4.2/lib/libsfml-system-d.a" />
+					<Add library="../../SFML-2.4.2/lib/libsfml-window-d.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -29,6 +29,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -42,10 +43,17 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../../SFML-2.4.2/include" />
 		</Compiler>
+		<Linker>
+			<Add directory="../../SFML-2.4.2/lib" />
+		</Linker>
+		<Unit filename="include/Case.h" />
+		<Unit filename="include/GainOr.h" />
 		<Unit filename="include/Joueur.h" />
 		<Unit filename="include/Partie.h" />
 		<Unit filename="include/Peuple.h" />
+		<Unit filename="include/Plateau.h" />
 		<Unit filename="include/Pouvoirs/Alchimistes.h" />
 		<Unit filename="include/Pouvoirs/Armes.h" />
 		<Unit filename="include/Pouvoirs/DesForets.h" />
@@ -145,9 +153,12 @@
 		<Unit filename="include/SFML/Window/WindowStyle.hpp" />
 		<Unit filename="include/main.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Case.cpp" />
+		<Unit filename="src/GainOr.cpp" />
 		<Unit filename="src/Joueur.cpp" />
 		<Unit filename="src/Partie.cpp" />
 		<Unit filename="src/Peuple.cpp" />
+		<Unit filename="src/Plateau.cpp" />
 		<Unit filename="src/Pouvoirs/Alchimistes.cpp" />
 		<Unit filename="src/Pouvoirs/Armes.cpp" />
 		<Unit filename="src/Pouvoirs/DesForets.cpp" />

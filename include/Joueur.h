@@ -3,6 +3,7 @@
 
 #include "Peuple.h"
 #include <vector>
+#include "GainOr.h"
 
 class Partie;
 
@@ -19,6 +20,8 @@ class Joueur
         void passerEnDeclin();
         void choisirNouveauPeuple(Partie * partie);
         void debutTour(Partie * partie);
+        void attaquer(std::shared_ptr<Case> caseAttaquee);
+        void finTour();
 
 
     protected:
@@ -27,6 +30,9 @@ class Joueur
         int nbPieces = 5;
         Peuple * peupleActif = 0;
         Peuple * peupleDeclin = 0;
+        void boucleAttaquer(Partie * partie);
+        GainOr gainOr;
+
 };
 
 #endif // JOUEUR_H

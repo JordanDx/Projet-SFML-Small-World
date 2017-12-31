@@ -254,12 +254,19 @@ private:
     /// playing queue.
     ///
     /// \param bufferNum Number of the buffer to fill (in [0, BufferCount])
+<<<<<<< Updated upstream
     /// \param immediateLoop Treat empty buffers as spent, and act on loops immediately
+=======
+>>>>>>> Stashed changes
     ///
     /// \return True if the stream source has requested to stop, false otherwise
     ///
     ////////////////////////////////////////////////////////////
+<<<<<<< Updated upstream
     bool fillAndPushBuffer(unsigned int bufferNum, bool immediateLoop = false);
+=======
+    bool fillAndPushBuffer(unsigned int bufferNum);
+>>>>>>> Stashed changes
 
     ////////////////////////////////////////////////////////////
     /// \brief Fill the audio buffers and put them all into the playing queue
@@ -282,8 +289,12 @@ private:
 
     enum
     {
+<<<<<<< Updated upstream
         BufferCount = 3,    ///< Number of audio buffers used by the streaming loop
         BufferRetries = 2   ///< Number of retries (excluding initial try) for onGetData()
+=======
+        BufferCount = 3 ///< Number of audio buffers used by the streaming loop
+>>>>>>> Stashed changes
     };
 
     ////////////////////////////////////////////////////////////

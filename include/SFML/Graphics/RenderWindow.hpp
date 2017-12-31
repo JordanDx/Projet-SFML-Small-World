@@ -113,6 +113,7 @@ public:
     virtual Vector2u getSize() const;
 
     ////////////////////////////////////////////////////////////
+
     /// \brief Activate or deactivate the window as the current target
     ///        for OpenGL rendering
     ///
@@ -131,6 +132,7 @@ public:
     bool setActive(bool active = true);
 
     ////////////////////////////////////////////////////////////
+
     /// \brief Copy the current contents of the window to an image
     ///
     /// \deprecated
@@ -177,6 +179,20 @@ protected:
     ///
     ////////////////////////////////////////////////////////////
     virtual void onResize();
+
+
+private:
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Activate the target for rendering
+    ///
+    /// \param active True to make the target active, false to deactivate it
+    ///
+    /// \return True if the function succeeded
+    ///
+    ////////////////////////////////////////////////////////////
+    virtual bool activate(bool active);
+
 };
 
 } // namespace sf
