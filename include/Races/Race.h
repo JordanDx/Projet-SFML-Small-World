@@ -11,6 +11,7 @@ class Race
         std::string getNom() const;
         int getNbUnites() const;
 
+
     protected:
 
     private:

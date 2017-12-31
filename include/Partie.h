@@ -3,6 +3,7 @@
 
 
 #include "main.h"
+#include "Plateau.h"
 using namespace sf;
 using namespace std;
 
@@ -17,6 +18,7 @@ class Partie
         int lancerPartie();
         std::vector<Peuple*> getPeuples();
         void afficherPeuples();
+        Plateau getPlateau() const;
 
     protected:
 
@@ -24,6 +26,7 @@ class Partie
         std::vector<Race> racesMelangees;
         std::vector<PouvoirSpecial> pouvoirsMelanges;
         std::vector<Peuple*> peuples;
+        Plateau plateau;
 };
 
 #endif // PARTIE_H

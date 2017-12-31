@@ -6,7 +6,7 @@ using namespace sf;
 
 Partie::Partie()
 {
-    //ctor
+    //plateau = Plateau();
 }
 
 Partie::~Partie()
@@ -14,7 +14,7 @@ Partie::~Partie()
 
     for(unsigned int i=1; i<peuples.size(); i++)
     {
-      peuples[i];
+      delete peuples.at(i);
     }
 
 }
@@ -125,6 +125,10 @@ void Partie::afficherPeuples()
     }
 }
 
+Plateau Partie::getPlateau() const
+{
+    return plateau;
+}
 
 
 int Partie::lancerPartie()
@@ -152,7 +156,7 @@ int Partie::lancerPartie()
     unsigned int nbToursTotal = 2;
     unsigned int nbJoueurs = 2;
 
-    //Création des joueurs
+
     vector<Joueur> joueurs;
     while(window.isOpen())
     {
@@ -169,14 +173,15 @@ int Partie::lancerPartie()
 
         window.display();
 
+        //Création des joueurs
         for(unsigned int i=0; i<nbJoueurs; i++)
         {
             joueurs.push_back(Joueur());
         }
 
+
         while(numeroTour < nbToursTotal)
         {
-
             for(unsigned int i=0; i<nbJoueurs; i++)
             {
                 //afficherPeuples();
@@ -190,71 +195,6 @@ int Partie::lancerPartie()
     }
 
 
-
-
-
-
-
-/*
-    sf::RenderWindow window(sf::VideoMode(1600, 689), "Small World");
-
-    //Affichage map
-    Texture textureMap;
-    if (!textureMap.loadFromFile("Images/Map.jpg")) //1136 x 689
-    {
-        return -1;
-    }
-    Sprite spriteMap;
-    spriteMap.setTexture(textureMap);
-    window.draw(spriteMap);
-
-    Font font;
-    if (!font.loadFromFile("Mermaid1001.ttf"))
-    {
-        return -1;
-    }
-
-
-    Text texte;
-    texte.setFont(font);
-    texte.setCharacterSize(24);
-    texte.setPosition(1150, 10);
-
-    texte.setString("Peuples disponibles :\n");
-    for(unsigned int i=0; i<peuples.size(); i++)
-    {
-        texte.setString(texte.getString() + peuples.at(i).toString() + "\n");
-        //cout << "test : " << peuples.at(i).toString() << endl;
-    }
-    texte.setFillColor(Color::Yellow);
-    window.draw(texte);
-
-    window.display();
-
-    while (window.isOpen())
-    {
-        //Détection d'évènements
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-            {
-                window.close();
-            }
-
-            /*
-            if (event.type == sf::Event::KeyPressed)
-            {
-                std::cout << "Une touche a ete actionnee" << std::endl;
-                //sound.play();
-            }
-            */
-/*
-
-        }
-
-    }
-*/
 
  return 0;
 }
