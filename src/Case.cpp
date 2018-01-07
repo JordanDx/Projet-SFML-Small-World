@@ -11,12 +11,6 @@ Case::Case(NETypeCase::ETypeCase typeCase) : typeCase(typeCase)
 }
 
 Case::~Case(){
-    /*
-    delete peuple;
-    for(vector<Case *>::iterator i = voisins.begin(); i!=voisins.end(); ++i){
-        delete *i;
-    }
-    */
 
 }
 

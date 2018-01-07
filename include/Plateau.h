@@ -18,8 +18,6 @@ class Plateau
     protected:
 
     private:
-      // std::vector<Case*> cases;
-       //std::vector<Case*> bords;
 
        std::vector<std::shared_ptr<Case> > cases;
        std::vector<std::shared_ptr<Case> > bords;

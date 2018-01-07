@@ -6,7 +6,7 @@ using namespace sf;
 
 Partie::Partie()
 {
-    //plateau = Plateau();
+
 }
 
 Partie::~Partie()
@@ -79,12 +79,12 @@ void Partie::iniatiliserJeu()
 int Partie::initialiserSons()
 {
     //Musique du jeu
-    sf::Music music;
-    if (!music.openFromFile("Sons/Music.ogg"))
+    //sf::Music music;
+    if (!music.openFromFile("./Sons/Music.ogg"))
         return -1;
     music.setLoop(true);
-    music.play();
-/*
+
+    /*
     //Son court
     sf::SoundBuffer buffer;
     if (!buffer.loadFromFile("Sons/sound.wav"))
@@ -92,6 +92,7 @@ int Partie::initialiserSons()
     sf::Sound sound;
     sound.setBuffer(buffer);
     */
+
 
     return 0;
 }
@@ -149,15 +150,16 @@ int Partie::lancerPartie()
 
 
     iniatiliserJeu();
-    //initialiserSons();
-    //Joueur joueur1;
-    //Joueur joueur2;
+    initialiserSons();
+    music.play();
+
+
+
+
     unsigned int numeroTour = 0;
     unsigned int nbToursTotal = 2;
     unsigned int nbJoueurs = 2;
 
-
-    vector<Joueur> joueurs;
     while(window.isOpen())
     {
         Event event;

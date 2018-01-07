@@ -26,7 +26,9 @@ class Partie
         std::vector<Race> racesMelangees;
         std::vector<PouvoirSpecial> pouvoirsMelanges;
         std::vector<Peuple*> peuples;
+        std::vector<Joueur> joueurs;
         Plateau plateau;
+        sf::Music music;
 };
 
 #endif // PARTIE_H

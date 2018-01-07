@@ -26,8 +26,6 @@ Plateau::Plateau(){
     shared_ptr<Case> case2(new Case(NETypeCase::Montagne));
     shared_ptr<Case> case3(new Case(NETypeCase::Marais));
 
-
-
     cases.push_back(case1);
     cases.push_back(case2);
     cases.push_back(case3);
@@ -236,7 +234,6 @@ Plateau::Plateau(){
 
 std::shared_ptr<Case> Plateau::getCase(int i) const{
 
-    printf("test a\n");
 
     // Case * retourCase = cases.at(i);
      //retourCase->test();
@@ -257,14 +254,16 @@ std::vector<std::shared_ptr<Case>> Plateau::getBords(){
 
 
 Plateau::~Plateau(){
-    /*
-   for(int i=0; i<cases.size(); i++)
+
+/*
+   for(unsigned int i=0; i<cases.size(); i++)
    {
        delete cases[i];
    }
-    for(int i=0; i<bords.size(); i++)
+    for(unsigned int i=0; i<bords.size(); i++)
    {
        delete bords[i];
    }
    */
+
 }
